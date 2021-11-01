@@ -1,9 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
+:root {
+  --speed: 500ms;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
-  box-sizing: border-box;
   font-size: 16px;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #000000;
+  margin: 0;
+  padding: 0.75rem;
 }
 
 /*************
@@ -23,8 +41,6 @@ body {
 }
 
 .active-menu {
-  text-decoration: none;
-  list-style-type: none;
   padding: 1.5rem 0;
   margin: 0;
   position: fixed;
@@ -35,20 +51,20 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 15%;
+  height: 23%;
   background: #ffffff;
-  transition: height 2s;
+  transition: all 0.25s ease-in-out;
 }
 
 .hamburger-menu {
   position: fixed;
-  background: #ffffff;
   border: none;
   padding: 6px;
-  top: 2.5rem;
-  left: 1.5rem;
+  top: 3rem;
+  left: 1rem;
   font-size: 2rem;
   z-index: 20;
+  background: none;
 }
 
 .dim {
@@ -87,5 +103,16 @@ body {
 }
 
 .hidden {
-  display: none;
+  padding: 1.5rem 0;
+  margin: 0;
+  position: fixed;
+  top: -30%;
+  font-size: 2rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 0%;
+  transition: all 0.25s ease-in-out;
 }

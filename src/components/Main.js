@@ -1,5 +1,4 @@
 import Header from './Header';
-import Button from './utilities/Button';
 
 const Main = ({ open, onClick }) => {
   return (
@@ -16,7 +15,7 @@ const Main = ({ open, onClick }) => {
         fugiat dolor laborum consectetur nisi labore. Deserunt cillum irure
         velit anim reprehenderit quis adipisicing.
       </p>
-      <Button />
+
       <img
         src="url('https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg')"
         alt=""

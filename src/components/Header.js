@@ -1,4 +1,6 @@
 import { GiHamburgerMenu } from 'react-icons/gi';
+import MenuList from './header/MenuList';
+import { Link, Router } from 'react-router-dom';
 
 const Header = ({ open, onClick }) => {
   return (
@@ -6,11 +8,11 @@ const Header = ({ open, onClick }) => {
       <button className="hamburger-menu" onClick={onClick}>
         <GiHamburgerMenu />
       </button>
-      <button className={open ? 'hidden' : 'header-button'}>Rob Noyes</button>
-      <ul className={open ? 'active-menu' : 'hidden'}>
-        <li className="list-container">Work</li>
-        <li className="list-container">Contact</li>
-      </ul>
+
+      <Link to="/">
+        <button className={open ? '' : 'header-button'}>Rob Noyes</button>
+      </Link>
+      <MenuList open={open} onClick={onClick} />
     </div>
   );
 };
