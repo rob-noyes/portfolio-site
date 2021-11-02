@@ -1,18 +1,28 @@
-import { GiHamburgerMenu } from 'react-icons/gi';
-import MenuList from './header/MenuList';
-import { Link, Router } from 'react-router-dom';
+import { GrMenu } from 'react-icons/gr';
+import { useState } from 'react';
 
-const Header = ({ open, onClick }) => {
+import { CSSTransition } from 'react-transition-group';
+import { Link } from 'react-router-dom';
+
+const Header = () => {
+  const [open, setOpen] = useState(false);
+
   return (
-    <div className={open ? 'dim' : 'header-container'}>
-      <button className="hamburger-menu" onClick={onClick}>
-        <GiHamburgerMenu />
+    <div className="header-container">
+      <button className="hamburger-menu">
+        <GrMenu onClick={() => setOpen(!open)} />
       </button>
-      <Link to="/">
-        <button className={open ? '' : 'header-button'}>Rob Noyes</button>
-      </Link>
-      <MenuList open={open} onClick={onClick} />
+      <button className="header-button">Rob Noyes</button>
+      <CSSTransition in={open} timeout={300} classNames="fade" unmountOnExit>
+        <ul>
+          <Link to="/projects">Testing</Link>
+          <li></li>
+          <li>Stuff</li>
+          <li>More Stuff</li>
+        </ul>
+      </CSSTransition>
     </div>
   );
 };
+
 export default Header;
