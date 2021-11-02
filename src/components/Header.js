@@ -8,7 +8,6 @@ const Header = ({ open, onClick }) => {
       <button className="hamburger-menu" onClick={onClick}>
         <GiHamburgerMenu />
       </button>
-
       <Link to="/">
         <button className={open ? '' : 'header-button'}>Rob Noyes</button>
       </Link>

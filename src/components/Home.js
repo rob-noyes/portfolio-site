@@ -1,9 +1,9 @@
 import Header from './Header';
 
-const Main = ({ open, onClick }) => {
+const Home = ({ open, onClick, setOpen }) => {
   return (
     <div className="">
-      <Header open={open} onClick={onClick} />
+      <Header open={open} onClick={onClick} setOpen={setOpen} />
       <h2>Hello World</h2>
       <p>
         Consequat elit ipsum deserunt id exercitation nulla duis magna voluptate
@@ -24,4 +24,4 @@ const Main = ({ open, onClick }) => {
   );
 };
 
-export default Main;
+export default Home;

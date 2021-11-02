@@ -1,25 +1,22 @@
-import { useState } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import './App.css';
 import Home from './components/Home';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Work from './components/Work';
+import { useState } from 'react';
+import { CSSTransition } from 'react-transition-group';
 
-function App() {
+const Routes = () => {
   const [open, setOpen] = useState(false);
 
   const handleHeader = () => {
     setOpen(!open);
   };
-
   return (
     <BrowserRouter>
       <Switch>
         <Route
           exact
           path="/"
-          component={() => (
-            <Home open={open} onClick={handleHeader} setOpen={setOpen} />
-          )}
+          component={() => <Home open={open} onClick={handleHeader} />}
         />
         <Route
           exact
@@ -29,6 +26,5 @@ function App() {
       </Switch>
     </BrowserRouter>
   );
-}
-
-export default App;
+};
+export default Routes;
