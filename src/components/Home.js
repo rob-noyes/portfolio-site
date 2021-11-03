@@ -1,20 +1,22 @@
 import Header from './Header';
+import DescriptionCard from './home-components/DescriptionCard';
 
 const Home = () => {
   return (
     <div>
       <Header />
-      <div>
-        <h2>Testing </h2>
-        <p>
-          Ut anim qui eiusmod exercitation consequat Lorem in aliquip
-          consectetur enim Lorem pariatur laborum ut. Elit est est reprehenderit
-          qui enim. Ullamco reprehenderit adipisicing dolor id aliquip.
-          Exercitation dolor magna reprehenderit incididunt voluptate eu minim
-          enim. Cillum eiusmod pariatur deserunt ut laborum esse veniam aliqua
-          nulla officia. Eu qui sit sint voluptate sit culpa excepteur ut
-          deserunt fugiat aliqua culpa. Eu commodo anim veniam nisi enim fugiat.
-        </p>
+      <div className="centering">
+        <div>
+          <h2 className="headings">Successful Front-End Development</h2>
+          <p className="descriptions">
+            Hi! I'm Rob, a freelance Front-end Developer creating mobile-first,
+            responsible successful websites.
+          </p>
+        </div>
+        <div>
+          <DescriptionCard />
+          <DescriptionCard />
+        </div>
       </div>
     </div>
   );

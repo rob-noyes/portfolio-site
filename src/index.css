@@ -136,7 +136,7 @@ a {
   border: none;
   padding: 6px;
   top: 2.5rem;
-  left: 1rem;
+  right: 1rem;
   font-size: 2rem;
   z-index: 100;
   background: none;
@@ -172,4 +172,42 @@ a {
 
 .list-container {
   padding: 1rem;
+}
+
+/*************
+    HOME
+*************/
+
+.centering {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem 2.5rem;
+  line-height: 2rem;
+}
+
+.headings {
+  font-size: 1.65rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+
+.descriptions {
+  padding-top: 0.25rem;
+}
+
+/******************
+    HOME - CARDS
+*******************/
+
+.description-card {
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 5px 0.1px #000000;
+  margin: 1rem;
+  padding: 3rem;
+  background: #ffffff;
+}
+.description-card:hover {
+  background: #dadada;
 }

@@ -1,6 +1,6 @@
 import Header from './Header';
 
-const Projects = () => {
+const Portfolio = () => {
   return (
     <div>
       <Header />
@@ -9,4 +9,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Portfolio;
