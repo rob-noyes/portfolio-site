@@ -5,18 +5,13 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <div className="centering">
-        <div>
-          <h2 className="headings">Successful Front-End Development</h2>
-          <p className="descriptions">
-            Hi! I'm Rob, a freelance Front-end Developer creating mobile-first,
-            responsible successful websites.
-          </p>
-        </div>
-        <div>
-          <DescriptionCard />
-          <DescriptionCard />
-        </div>
+      <div className="hello-container">
+        <h2 className="home-heading">
+          Hi, my name is <b>Rob</b>.
+        </h2>
+      </div>
+      <div className="home-about">
+        <h3>Freelance Front-end Developer</h3>
       </div>
     </div>
   );

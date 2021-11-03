@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-:root {
-  --speed: 500ms;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -103,16 +99,17 @@ a {
 }
 
 .header-container {
+  position: absolute;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  margin: 2rem 3rem;
-  height: 10vh;
+  justify-content: start;
+  padding-top: 2rem;
+  width: 100%;
 }
 
 .header-button {
   font-size: 2rem;
+  position: relative;
 }
 
 .active-menu {
@@ -142,17 +139,6 @@ a {
   background: none;
 }
 
-.dim {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  background: rgba(0, 0, 0, 0.8);
-
-  z-index: 100;
-}
-
 /*************
     UTILITY
 *************/
@@ -178,23 +164,36 @@ a {
     HOME
 *************/
 
-.centering {
+.hello-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  margin: 1rem 2.5rem;
+  margin: 0 1rem;
   line-height: 2rem;
+  min-height: 100vh;
 }
 
-.headings {
-  font-size: 1.65rem;
-  line-height: 2.5rem;
-  font-weight: 600;
+.home-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(230, 230, 230);
+  border-radius: 10px 10px 0 0;
+  min-height: 50vh;
+  margin: 0 1rem;
+}
+
+.home-heading {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 400;
 }
 
 .descriptions {
   padding-top: 0.25rem;
+  font-weight: 400;
 }
 
 /******************
@@ -202,12 +201,16 @@ a {
 *******************/
 
 .description-card {
-  border-radius: 0.5rem;
-  box-shadow: 1px 1px 5px 0.1px #000000;
-  margin: 1rem;
-  padding: 3rem;
-  background: #ffffff;
+  top: -6px;
+  left: 6px;
+  background: #e0e0e0;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  box-shadow: 6px -6px 0 0 #000000;
+  padding: 12px 20px 14px 20px;
+  margin: 1rem 0;
 }
 .description-card:hover {
-  background: #dadada;
+  background: #1d1d1d;
+  color: #ffffff;
 }

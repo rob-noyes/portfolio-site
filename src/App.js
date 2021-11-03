@@ -1,6 +1,6 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
-import Contact from './components/Contact';
+import About from './components/About';
 import Home from './components/Home';
 import Portfolio from './components/Portfolio';
 
@@ -10,7 +10,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/portfolio" component={Portfolio} />
-        <Route path="/contact" component={Contact} />
+        <Route path="/about" component={About} />
       </Switch>
     </BrowserRouter>
   );
