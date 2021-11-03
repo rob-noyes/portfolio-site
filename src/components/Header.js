@@ -12,13 +12,14 @@ const Header = () => {
       <button className="hamburger-menu">
         <GrMenu onClick={() => setOpen(!open)} />
       </button>
-      <button className="header-button">Rob Noyes</button>
+      <Link to="/">
+        <button className="header-button">Rob Noyes</button>
+      </Link>
       <CSSTransition in={open} timeout={300} classNames="fade" unmountOnExit>
         <ul>
-          <Link to="/projects">Testing</Link>
-          <li></li>
-          <li>Stuff</li>
-          <li>More Stuff</li>
+          <Link to="/">Home</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/contact">Contact</Link>
         </ul>
       </CSSTransition>
     </div>
