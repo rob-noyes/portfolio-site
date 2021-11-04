@@ -5,24 +5,27 @@ import { MdDevices, MdFlashOn } from 'react-icons/md';
 const Description = () => {
   return (
     <div className="description-container">
-      <div>
+      <div className="centering">
         <h2 className="home-title">About</h2>
         <div className="line"></div>
       </div>
       <DescriptionCard
         icon={<MdFlashOn />}
         title="Fast"
-        text="A fast site is important, users shouldn't have to wait on things to load."
+        text="Fast load times and intuitive interaction is a high priorty for me."
+        className="color-red"
       />
       <DescriptionCard
         icon={<MdDevices />}
         title="Responsive"
-        text="A site should be viewable on any platform, repsonsive sites allow for just that."
+        text="My layouts are built to work on any device, from small to big."
+        className="color-blue"
       />
       <DescriptionCard
         icon={<FaBuffer />}
         title="Dynamic"
-        text="Content should be dynamic on a site, allowing for users to see changes happen."
+        text="Sites don't always need to be static, I make pages come to life while feeling snappy."
+        className="color-green"
       />
     </div>
   );

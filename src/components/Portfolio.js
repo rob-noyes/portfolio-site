@@ -4,7 +4,9 @@ const Portfolio = () => {
   return (
     <div>
       <Header />
-      <h2>Hi this is the projects page</h2>
+      <div className="">
+        <h2>Hi this is the projects page</h2>
+      </div>
     </div>
   );
 };

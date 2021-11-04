@@ -158,8 +158,23 @@ a {
     UTILITY
 *************/
 
+.main-button {
+  position: unset;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  z-index: 0;
+}
+
 .list-container {
   padding: 1rem;
+}
+
+.centering {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*************
@@ -207,6 +222,7 @@ a {
   width: 50%;
   height: 2px;
   background: black;
+  margin-bottom: 3rem;
 }
 
 /******************
@@ -236,10 +252,21 @@ a {
 }
 .description-card:hover {
   background: #000000;
-  color: #ffffff;
 }
 
 .descriptions {
   padding: 1rem;
   font-weight: 400;
+}
+
+.color-red:hover {
+  background: #ecb6b6;
+}
+
+.color-blue:hover {
+  background: #b6d8ec;
+}
+
+.color-green:hover {
+  background: #b6ecb6;
 }

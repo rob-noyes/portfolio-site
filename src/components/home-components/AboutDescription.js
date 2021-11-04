@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const AboutDescription = () => {
   return (
     <div className="landing-container">
@@ -8,6 +10,9 @@ const AboutDescription = () => {
         I'm a freelance front-end developer, focused on mobile-first, responsive
         development.
       </p>
+      <Link to="/portfolio">
+        <button className="main-button">View my work</button>
+      </Link>
     </div>
   );
 };
