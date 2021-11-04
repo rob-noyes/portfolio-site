@@ -13,7 +13,7 @@ const Header = () => {
         <GrMenu onClick={() => setOpen(!open)} />
       </button>
       <Link to="/">
-        <button className="header-button">RN</button>
+        <button className="header-button">Rob Noyes</button>
       </Link>
       <CSSTransition in={open} timeout={300} classNames="fade" unmountOnExit>
         <ul>

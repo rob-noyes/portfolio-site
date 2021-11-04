@@ -99,17 +99,14 @@ a {
 }
 
 .header-container {
-  position: absolute;
+  position: fixed;
   display: flex;
   align-items: center;
-  justify-content: start;
-  padding-top: 2rem;
+  justify-content: center;
+  padding-top: 1rem;
   width: 100%;
-}
-
-.header-button {
-  font-size: 2rem;
-  position: relative;
+  height: 15%;
+  background: #ffffff;
 }
 
 .active-menu {
@@ -139,10 +136,6 @@ a {
   background: none;
 }
 
-/*************
-    UTILITY
-*************/
-
 .header-button,
 .main-button {
   position: relative;
@@ -155,6 +148,15 @@ a {
   box-shadow: -6px 6px 0 0 #000000;
   padding: 12px 20px 14px 20px;
 }
+
+.header-button {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/*************
+    UTILITY
+*************/
 
 .list-container {
   padding: 1rem;
@@ -170,9 +172,13 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0 1rem;
+  padding: 3rem 1rem;
+  padding-top: 5rem;
   line-height: 2rem;
-  min-height: 100vh;
+}
+
+.landing-container {
+  margin: 4rem 0;
 }
 
 .home-about {
@@ -186,19 +192,36 @@ a {
 }
 
 .home-heading {
-  font-size: 3rem;
-  line-height: 3rem;
-  font-weight: 400;
+  font-size: 2rem;
+  font-weight: 500;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
 }
 
-.descriptions {
-  padding-top: 0.25rem;
-  font-weight: 400;
+.home-title {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.line {
+  width: 50%;
+  height: 2px;
+  background: black;
 }
 
 /******************
-    HOME - CARDS
+    HOME - DESCRIPTION CARDS
 *******************/
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.description-icon {
+  padding: 1rem 0;
+  font-size: 3rem;
+}
 
 .description-card {
   top: -6px;
@@ -207,10 +230,16 @@ a {
   border: 2px solid #000000;
   border-radius: 6px;
   box-shadow: 6px -6px 0 0 #000000;
-  padding: 12px 20px 14px 20px;
+  padding: 6px 20px 14px 20px;
   margin: 1rem 0;
+  max-width: 20rem;
 }
 .description-card:hover {
-  background: #1d1d1d;
+  background: #000000;
   color: #ffffff;
+}
+
+.descriptions {
+  padding: 1rem;
+  font-weight: 400;
 }

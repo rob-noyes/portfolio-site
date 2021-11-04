@@ -1,8 +1,9 @@
-const DescriptionCard = () => {
+const DescriptionCard = ({ icon, title, text }) => {
   return (
     <div className="description-card">
-      <h2 className="headings">I'm a Card!</h2>
-      <p className="descriptions">Here is some information on this card.</p>
+      <figure className="description-icon">{icon}</figure>
+      <h2 className="headings">{title}</h2>
+      <p className="descriptions">{text}</p>
     </div>
   );
 };
