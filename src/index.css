@@ -240,8 +240,6 @@ a {
 }
 
 .description-card {
-  top: -6px;
-  left: 6px;
   background: #e0e0e0;
   border: 2px solid #000000;
   border-radius: 6px;
@@ -250,6 +248,7 @@ a {
   margin: 1rem 0;
   max-width: 20rem;
 }
+
 .description-card:hover {
   background: #000000;
 }
@@ -269,4 +268,23 @@ a {
 
 .color-green:hover {
   background: #b6ecb6;
+}
+
+/******************
+    HOME - PROJECT CARDS
+*******************/
+
+.project-cards {
+  display: flex;
+  background: #e0e0e0;
+  flex-direction: column;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  box-shadow: 6px -6px 0 0 #000000;
+}
+
+.project-card-image {
+  border-radius: 6px 6px 0 0;
+
+  max-width: 100%;
 }
