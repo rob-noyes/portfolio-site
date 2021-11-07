@@ -8,7 +8,10 @@ const HomeProject = () => {
         <div className="line"></div>
       </div>
       <div className="project-cards">
-        <ProjectCard src="/images/projects/room/desktop1.png" />
+        <ProjectCard
+          src="/images/projects/room/desktop1.png"
+          color={'#ffffff'}
+        />
       </div>
     </div>
   );
