@@ -18,7 +18,7 @@ const ProjectCard = ({ src, title, color }) => {
         classNames="project-caption"
         unmountOnExit
       >
-        <div className="project-caption" style={{ background: { color } }}>
+        <div className="project-caption" style={{ background: color }}>
           <h3>Project</h3>
           <Link to="/portfolio/test">
             <div className="view-button">
