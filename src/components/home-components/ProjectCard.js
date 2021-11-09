@@ -14,16 +14,16 @@ const ProjectCard = ({ src, title, color }) => {
     >
       <CSSTransition
         in={hover}
-        timeout={300}
+        timeout={200}
         classNames="project-caption"
         unmountOnExit
       >
         <div className="project-caption" style={{ background: color }}>
-          <h3>Project</h3>
+          <div></div>
+          <h3>{title}</h3>
           <Link to="/portfolio/test">
             <div className="view-button">
               <h3>View Project</h3>
-
               <MdArrowForwardIos />
             </div>
           </Link>

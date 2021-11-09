@@ -5,7 +5,7 @@ const Portfolio = () => {
     <div>
       <Header />
       <div className="">
-        <h2>Hi this is the projects page</h2>
+        <h2>Hi this is the portfolio page</h2>
       </div>
     </div>
   );

@@ -1,0 +1,37 @@
+{
+    "Projects" : [
+    {
+        "id": 0,
+        "projectName": "Room Design",
+        "link": "https://rob-noyes.github.io/room-homepage/",
+        "tags": "ReactJS / TailwindCSS",
+        "description": "",
+        "images": [
+            "./images/projects/room/desktop1.png", "./images/projects/room/desktop2.png"
+        ],
+        "color": "#ecb6b6"
+    },
+    {
+        "id": 1,
+        "projectName": "Tip Jar",
+        "link": "https://rob-noyes.github.io/room-homepage/",
+        "tags": "ReactJS / TailwindCSS",
+        "description": "",
+        "images": [
+            "./images/projects/tipjar/desktop.png", "./images/projects/tipjar/mobile.png"
+        ],
+        "color": "#b6d8ec"
+    },
+    {
+        "id": 2,
+        "projectName": "Tip Jar",
+        "link": "https://rob-noyes.github.io/room-homepage/",
+        "tags": "ReactJS / TailwindCSS",
+        "description": "",
+        "images": [
+            "./images/projects/tipjar/desktop.png", "./images/projects/tipjar/mobile.png"
+        ],
+        "color": "#b6d8ec"
+    }
+]
+}

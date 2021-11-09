@@ -1,5 +1,7 @@
 import ProjectCard from './ProjectCard';
 
+const portfolio = require('../../utilities/projects.json');
+
 const HomeProject = () => {
   return (
     <div className="description-container">
@@ -8,10 +10,16 @@ const HomeProject = () => {
         <div className="line"></div>
       </div>
       <div className="project-cards">
-        <ProjectCard
-          src="/images/projects/room/desktop1.png"
-          color={'#ffffff'}
-        />
+        {portfolio.Projects.map((project) => {
+          return (
+            <ProjectCard
+              key={project.id}
+              src={project.images[0]}
+              color={project.color}
+              title={project.projectName}
+            />
+          );
+        })}
       </div>
     </div>
   );
