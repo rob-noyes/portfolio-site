@@ -1,5 +1,6 @@
 import Header from './Header';
 import AboutDescription from './home-components/AboutDescription';
+import Contact from './home-components/Contact';
 import Description from './home-components/Description';
 import HomeProject from './home-components/HomeProject';
 
@@ -13,6 +14,9 @@ const Home = () => {
       </div>
       <div className="hello-container">
         <HomeProject />
+      </div>
+      <div>
+        <Contact />
       </div>
     </div>
   );
