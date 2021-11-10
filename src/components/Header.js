@@ -17,9 +17,9 @@ const Header = () => {
       </Link>
       <CSSTransition in={open} timeout={300} classNames="fade" unmountOnExit>
         <ul>
-          <Link to="/">Home</Link>
-          <Link to="/portfolio">Portfolio</Link>
-          <Link to="/about">About</Link>
+          <Link to="/portfolio-site">Home</Link>
+          <Link to="/portfolio-site/portfolio">Portfolio</Link>
+          <Link to="/portfolio-site/about">About</Link>
         </ul>
       </CSSTransition>
     </div>
