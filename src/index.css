@@ -43,7 +43,7 @@ a {
 }
 .fade-enter-done {
   position: fixed;
-  height: 30%;
+  height: 230px;
   width: 100%;
   top: 0;
   left: 0;
@@ -105,25 +105,9 @@ a {
   justify-content: center;
   padding-top: 1rem;
   width: 100%;
-  height: 15%;
+  height: 135px;
   background: #ffffff;
-  z-index: 10;
-}
-
-.active-menu {
-  padding: 1.5rem 0;
-  margin: 0;
-  position: fixed;
-  top: 0%;
-  font-size: 2rem;
-  font-weight: 600;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 23%;
-  background: #ffffff;
-  transition: all 100ms ease-in-out;
+  z-index: 30;
 }
 
 .hamburger-menu {
@@ -143,6 +127,7 @@ a {
   font-weight: 700;
   top: -6px;
   left: 6px;
+  color: #000000;
   background: #ffffff;
   border: 2px solid #000000;
   border-radius: 6px;
@@ -378,4 +363,16 @@ a {
   height: 2px;
   background: #ffffff;
   margin-bottom: 3rem;
+}
+
+/************
+    SKILLS
+*************/
+
+.about-skills {
+  padding: 2rem 0;
+}
+
+.about-heading {
+  padding-top: 4rem;
 }
