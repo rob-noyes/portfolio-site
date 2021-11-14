@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 import { MdArrowForwardIos } from 'react-icons/md';
 
-const ProjectCard = ({ src, title, color }) => {
+const ProjectCard = ({ src, title, color, linkname }) => {
   const [hover, setHover] = useState(false);
 
   return (
@@ -21,7 +21,7 @@ const ProjectCard = ({ src, title, color }) => {
         <div className="project-caption" style={{ background: color }}>
           <div></div>
           <h3 className="project-card-title">{title}</h3>
-          <Link to="/portfolio/test">
+          <Link to={'/' + linkname}>
             <div className="view-button">
               <h3>View Project</h3>
               <MdArrowForwardIos />

@@ -17,6 +17,7 @@ const HomeProject = () => {
               src={project.images[0]}
               color={project.color}
               title={project.projectName}
+              linkname={project.linkname}
             />
           );
         })}

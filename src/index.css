@@ -365,6 +365,15 @@ a {
   margin-bottom: 3rem;
 }
 
+/**************
+    PORTFOLIO
+***************/
+
+.portfolio-container {
+  display: flex;
+  margin-top: 5rem;
+}
+
 /************
     SKILLS
 *************/
@@ -375,4 +384,8 @@ a {
 
 .about-heading {
   padding-top: 4rem;
+}
+
+.about-bold {
+  font-weight: 600;
 }

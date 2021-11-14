@@ -1,11 +1,14 @@
 import Header from './Header';
+import HomeProject from './home-components/HomeProject';
 
 const Portfolio = () => {
   return (
     <div>
       <Header />
-      <div className="">
-        <h2>Hi this is the portfolio page</h2>
+      <div className="hello-container">
+        <div className="portfolio-container">
+          <HomeProject />
+        </div>
       </div>
     </div>
   );

@@ -3,6 +3,7 @@
     {
         "id": 0,
         "projectName": "Room Design",
+        "linkname": "roomdesign",
         "link": "https://rob-noyes.github.io/room-homepage/",
         "tags": "Javascript / ReactJS / TailwindCSS",
         "description": "",
@@ -14,6 +15,7 @@
     {
         "id": 1,
         "projectName": "Tip Jar",
+        "linkname": "tipjar",
         "link": "https://rob-noyes.github.io/room-homepage/",
         "tags": "Javascript / ReactJS / TailwindCSS",
         "description": "",
@@ -25,6 +27,7 @@
     {
         "id": 2,
         "projectName": "Cast",
+        "linkname": "cast",
         "link": "https://rob-noyes.github.io/Cast/",
         "tags": "Vanilla Javascript / CSS",
         "description": "",
