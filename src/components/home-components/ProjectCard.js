@@ -21,7 +21,7 @@ const ProjectCard = ({ src, title, color, linkname }) => {
         <div className="project-caption" style={{ background: color }}>
           <div></div>
           <h3 className="project-card-title">{title}</h3>
-          <Link to={'/' + linkname}>
+          <Link to="/portfolio">
             <div className="view-button">
               <h3>View Project</h3>
               <MdArrowForwardIos />
