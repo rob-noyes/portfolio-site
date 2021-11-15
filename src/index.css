@@ -371,7 +371,34 @@ a {
 
 .portfolio-container {
   display: flex;
+  flex-direction: column;
   margin-top: 5rem;
+}
+
+.image-container {
+  width: 100%;
+}
+
+.project-content-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  align-items: center;
+}
+
+.project-button {
+  position: relative;
+  font-weight: 700;
+  top: -6px;
+  left: 6px;
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  box-shadow: -6px 6px 0 0 #000000;
+  padding: 6px 10px 7px 10px;
+  width: 50%;
+  margin: 1rem;
 }
 
 /************
