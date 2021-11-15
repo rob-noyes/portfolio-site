@@ -39,7 +39,7 @@
         "link": "https://rob-noyes.github.io/Cast/",
         "github": "https://github.com/rob-noyes/Cast",
         "tags": "Vanilla Javascript / CSS",
-        "description": "Cast was my first project delving into async functions and fully utilziing an API for data.",
+        "description": "Cast was my first project delving into async functions and fully utilziing Open Weather API for fetching data on the backend.",
         "Content": "This project was a breakthrough for me working with Javascript without frameworks.  Finding the right way to fetch data from an API, and seeing it come to life was a big step for me.",
         "Content2": "Utilizing Javascripts Async and Await functions, I used fetch within async to allow the data from the API to start fetching while other javascript processes could be completed in the meantime.  I learned structure for my work as well, utilizing folders and modules in anticipation of working in React with the component structure.",
         "images": [
