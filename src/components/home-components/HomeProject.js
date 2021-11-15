@@ -6,10 +6,10 @@ const HomeProject = () => {
   return (
     <div className="description-container">
       <div className="centering">
-        <h2 className="home-title">Portfolio</h2>
+        <h2 id="home-title">Portfolio</h2>
         <div className="line"></div>
       </div>
-      <div className="project-cards">
+      <div id="project-cards">
         {portfolio.Projects.map((project) => {
           return (
             <ProjectCard

@@ -3,22 +3,24 @@ import Header from './Header';
 import AboutDescription from './home-components/AboutDescription';
 import Description from './home-components/Description';
 import HomeProject from './home-components/HomeProject';
+import Portfolio from './Portfolio';
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Header />
       <div className="hello-container">
         <AboutDescription />
         <Description />
       </div>
-      <div className="hello-container">
-        <HomeProject />
+      <div id="project"></div>
+      <div id="project-home-container">
+        <Portfolio />
       </div>
       <div>
         <Contact />
       </div>
-    </div>
+    </>
   );
 };
 

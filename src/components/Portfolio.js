@@ -7,7 +7,6 @@ const portfolio = require('../utilities/projects.json');
 const Portfolio = () => {
   return (
     <div className="portfolio-background">
-      <Header />
       <div className="portfolio-container">
         <div className="portfolio-title">
           <h2>Portfolio</h2>
@@ -32,7 +31,6 @@ const Portfolio = () => {
           })}
         </div>
       </div>
-      <Contact />
     </div>
   );
 };
