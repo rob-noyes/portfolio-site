@@ -1,7 +1,7 @@
 import Bio from './about-components/Bio';
 import Skills from './about-components/Skills';
 import Header from './Header';
-import Contact from './home-components/Contact';
+import Contact from './Contact';
 
 const About = () => {
   return (

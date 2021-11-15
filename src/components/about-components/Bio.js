@@ -10,6 +10,12 @@ const Bio = () => {
         I specialize in responsive, dynamic sites without sacrificing
         creativity.
       </p>
+      <p>
+        In my skillset, I focus on Reactjs, and have been working with
+        TailwindCSS as my latest CSS framework. Creating with these frameworks
+        has shown how much they can expedite the process of building sites and
+        applications.
+      </p>
     </div>
   );
 };

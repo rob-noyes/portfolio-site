@@ -1,6 +1,6 @@
+import Contact from './Contact';
 import Header from './Header';
 import AboutDescription from './home-components/AboutDescription';
-import Contact from './home-components/Contact';
 import Description from './home-components/Description';
 import HomeProject from './home-components/HomeProject';
 
