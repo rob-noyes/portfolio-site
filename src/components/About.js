@@ -1,6 +1,3 @@
-import Header from './Header';
-import Contact from './Contact';
-
 const About = () => {
   return (
     <div className="about">

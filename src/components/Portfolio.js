@@ -1,5 +1,3 @@
-import Contact from './Contact';
-import Header from './Header';
 import ProjectContent from './portfolio-components/ProjectContent';
 
 const portfolio = require('../utilities/projects.json');

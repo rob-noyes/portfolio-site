@@ -52,7 +52,7 @@ button {
 }
 
 .header-button {
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 0;
 }
 
@@ -68,6 +68,19 @@ button {
   margin-top: 1rem;
   font-weight: 600;
   z-index: 0;
+}
+
+.landing-container {
+  width: 100%;
+  background: rgb(224, 224, 224);
+  background: linear-gradient(
+    180deg,
+    rgba(224, 224, 224, 1) 15%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
 }
 
 .landing {
@@ -104,8 +117,17 @@ button {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 3rem 1rem;
   line-height: 2rem;
+}
+
+#project-home-container {
+  background: rgb(224, 224, 224);
+  background: linear-gradient(
+    180deg,
+    rgba(224, 224, 224, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(224, 224, 224, 1) 100%
+  );
 }
 
 .home-about {
@@ -125,15 +147,14 @@ button {
   padding-bottom: 1rem;
 }
 
-#home-title {
+.home-title {
   font-size: 2rem;
-  padding-bottom: 1rem;
 }
 
 .line {
   width: 50%;
   height: 2px;
-  background: black;
+  background: #000000;
   margin-bottom: 3rem;
 }
 
@@ -144,6 +165,22 @@ button {
 .description-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 19%,
+    rgba(224, 224, 224, 1) 100%
+  );
+}
+
+.description-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
 }
 
 .description-icon {
@@ -382,7 +419,7 @@ button {
 *************/
 
 .about {
-  margin-top: 3rem;
+  margin: 3rem 2rem;
   max-width: 1000px;
   text-align: left;
 }
@@ -410,7 +447,6 @@ MEDIA QUERY
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 3rem 1rem;
     line-height: 2rem;
   }
 
@@ -421,7 +457,6 @@ MEDIA QUERY
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 3rem 1rem;
     line-height: 2rem;
   }
 
@@ -436,6 +471,12 @@ MEDIA QUERY
     margin: 0 1rem;
   }
 
+  .about {
+    margin: 3rem 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
   .home-heading {
     font-size: 2rem;
     font-weight: 500;
@@ -445,7 +486,6 @@ MEDIA QUERY
 
   .home-title {
     font-size: 2rem;
-    padding-bottom: 1rem;
   }
 
   .line {
@@ -458,6 +498,10 @@ MEDIA QUERY
   /******************************
     HOME - DESCRIPTION CARDS
 *******************************/
+
+  .description-container {
+    height: 100vh;
+  }
 
   .description-cards {
     display: flex;
@@ -585,7 +629,7 @@ MEDIA QUERY
   }
 
   .project-line {
-    width: 150%;
+    width: 200px;
     height: 2px;
     background: black;
     margin-top: 1rem;

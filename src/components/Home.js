@@ -1,4 +1,3 @@
-import About from './About';
 import Contact from './Contact';
 import Header from './Header';
 import AboutDescription from './home-components/AboutDescription';
@@ -12,7 +11,6 @@ const Home = () => {
       <div className="hello-container">
         <AboutDescription />
         <Description />
-        <About />
       </div>
       <div id="project"></div>
       <div id="project-home-container">
