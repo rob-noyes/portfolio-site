@@ -1,6 +1,7 @@
 const AboutDescription = () => {
   return (
     <div className="landing-container">
+      <div className="landing-image"></div>
       <div className="landing">
         <h2 className="home-heading">
           Hi, my name is <b>Rob</b>.
