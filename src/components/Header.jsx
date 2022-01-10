@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { MdMenu, MdClose } from 'react-icons/md';
 
 const Header = () => {
@@ -10,25 +10,31 @@ const Header = () => {
   };
 
   return (
-    <nav className='bg-tertiary'>
-      <div className='flex justify-between items-center m-auto h-14 shadow-lg max-w-5xl'>
-        <button onClick={menuControl} className='pl-1 text-3xl sm:hidden'>
+    <nav className='bg-primary shadow-2xl p-4'>
+      <div className='flex justify-between items-center m-auto h-14 max-w-7xl'>
+        <button onClick={menuControl} className='ml-1 p-2 text-3xl sm:hidden'>
           <MdMenu />
         </button>
-        <ul className='hidden sm:flex text-white'>
-          <Link to='/'>
-            <li className='px-2'>Projects</li>
-          </Link>
-          <Link to='/'>
-            <li className='px-2'>About</li>
-          </Link>
-          <Link to='/'>
-            <li className='px-2'>Contact</li>
-          </Link>
+        <ul className='hidden sm:flex text-secondary'>
+          <li>
+            <NavLink className='px-2' to='/projects'>
+              Projects
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className='px-2' to='/about'>
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className='px-2' to='/'>
+              Contact
+            </NavLink>
+          </li>
         </ul>
         <Link className='w-44' to='/'>
           <img
-            src='/images/robNoyes.png'
+            src='/images/logoNoyes.png'
             className='pr-5 cursor-pointer'
             alt=''
           />
@@ -37,20 +43,26 @@ const Header = () => {
       <div
         className={`${
           menu
-            ? 'fixed mt-14 top-0 w-full h-32 z-10'
+            ? 'absolute mt-14 top-0 w-full h-32 z-10 md:hidden'
             : 'w-full h-0 fixed top-14'
-        } bg-secondary transition-all transform duration-300 ease-in-out`}
+        } bg-primary text-secondary transition-height transform duration-300 ease-in-out`}
       >
         <ul
           className={
             menu
-              ? 'flex flex-col items-center text-lg h-full'
-              : 'hidden text-lg'
+              ? 'transition-all duration-300 flex flex-col items-center text-lg h-full'
+              : 'transition-all duration-300 flex flex-col items-center text-micro'
           }
         >
-          <li className='py-2'>Projects</li>
-          <li className='py-2'>About Me</li>
-          <li className='py-2'>Contact</li>
+          <Link className='py-2' to='/'>
+            <li>Projects</li>
+          </Link>
+          <Link className='py-2' to='/'>
+            <li>About</li>
+          </Link>
+          <Link className='py-2' to='/'>
+            <li>Contact</li>
+          </Link>
         </ul>
       </div>
     </nav>
