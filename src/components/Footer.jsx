@@ -13,7 +13,7 @@ function Footer() {
           </h3>
           <h4>robertjnoyes1@gmail.com</h4>
         </div>
-        <div className='flex items-center gap-2 text-2xl'>
+        <div className='flex items-center gap-3 text-2xl'>
           <a href='https://github.com/rob-noyes'>
             <BsGithub fill='#fff' />
           </a>
@@ -26,15 +26,15 @@ function Footer() {
         </div>
       </div>
       <div className='pt-16 text-lg max-w-7xl m-auto'>
-        <ul className='flex flex-row pb-10'>
+        <ul className='flex flex-row pb-10 gap-8'>
           <li>
             <Link to='/'>Work</Link>
           </li>
-          <li className='px-8'>
-            <Link to='/'>About</Link>
+          <li>
+            <Link to='/about'>About</Link>
           </li>
           <li>
-            <Link to='/'>Contact</Link>
+            <Link to='/contact'>Contact</Link>
           </li>
         </ul>
         <span className='text-base text-tertiary'>

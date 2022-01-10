@@ -10,14 +10,14 @@ const Header = () => {
   };
 
   return (
-    <nav className='bg-primary shadow-2xl p-4'>
+    <nav className='bg-primary sm:p-4'>
       <div className='flex justify-between items-center m-auto h-14 max-w-7xl'>
         <button onClick={menuControl} className='ml-1 p-2 text-3xl sm:hidden'>
           <MdMenu />
         </button>
         <ul className='hidden sm:flex text-secondary text-xl'>
           <li>
-            <NavLink className='px-2' to='/work'>
+            <NavLink className='px-2' to='/'>
               Work
             </NavLink>
           </li>
@@ -27,7 +27,7 @@ const Header = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink className='px-2' to='/'>
+            <NavLink className='px-2' to='/contact'>
               Contact
             </NavLink>
           </li>
@@ -55,13 +55,13 @@ const Header = () => {
           }
         >
           <Link className='py-2' to='/'>
-            <li>Work</li>
+            <li onClick={menuControl}>Work</li>
           </Link>
-          <Link className='py-2' to='/'>
-            <li>About</li>
+          <Link className='py-2' to='/about'>
+            <li onClick={menuControl}>About</li>
           </Link>
-          <Link className='py-2' to='/'>
-            <li>Contact</li>
+          <Link className='py-2' to='/contact'>
+            <li onClick={menuControl}> Contact</li>
           </Link>
         </ul>
       </div>
