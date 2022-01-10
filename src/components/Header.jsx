@@ -9,10 +9,6 @@ const Header = () => {
     setMenu(!menu);
   };
 
-  const activeClass = {
-    TextDecoration: 'underline',
-  };
-
   return (
     <nav className='bg-primary shadow-2xl p-4'>
       <div className='flex justify-between items-center m-auto h-14 max-w-7xl'>
