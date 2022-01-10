@@ -3,12 +3,24 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#8FCDD5',
-        secondary: '#6BACC9',
-        tertiary: '#2D5F73',
-        vibrant: '#F15260',
-        muted: '#C3AE8D',
+        primary: '#F2F2F2',
+        secondary: '#0D0D0D',
+        head: '#333',
+        tertiary: '#A6A6A6',
+        four: '#C4D4F2',
+        five: '#99AFF2',
       },
+      fontSize: {
+        micro: '0px',
+        responsive: '3.125vw',
+        growing: '2.125vw',
+      },
+      padding: {
+        third: '23%',
+      },
+    },
+    fontFamily: {
+      aktiv: ['aktiv-grotesk', 'sans-serif'],
     },
   },
   plugins: [],
