@@ -1,8 +1,8 @@
 # Portfolio Site
 
-My Portfolio site is a way to show off the different abilites i've learned throughout my work, and present my work in a fast loading, responsive site.
+My Portfolio site is a way to show off the different abilites i've learned throughout my work, and present my work in a responsive, fast, easy-to-navigate site.
 
-Built with Reactjs, React Router dom, HTML/CSS.
+Built with Reactjs, react-router-dom, tailwindCSS
 
 ## Demo
 
