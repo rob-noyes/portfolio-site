@@ -15,10 +15,10 @@ const Header = () => {
         <button onClick={menuControl} className='ml-1 p-2 text-3xl sm:hidden'>
           <MdMenu />
         </button>
-        <ul className='hidden sm:flex text-secondary'>
+        <ul className='hidden sm:flex text-secondary text-xl'>
           <li>
-            <NavLink className='px-2' to='/projects'>
-              Projects
+            <NavLink className='px-2' to='/work'>
+              Work
             </NavLink>
           </li>
           <li>
@@ -55,7 +55,7 @@ const Header = () => {
           }
         >
           <Link className='py-2' to='/'>
-            <li>Projects</li>
+            <li>Work</li>
           </Link>
           <Link className='py-2' to='/'>
             <li>About</li>

@@ -14,8 +14,9 @@ function Home() {
           src=''
           href='https://myrewind.netlify.app/'
         />
-        <div>Project Goes here</div>
-        <div>Project Goes here</div>
+        <ProjectCard title='Room' />
+        <ProjectCard title='Tip Jar' />
+        <ProjectCard title='Cast' />
       </div>
     </div>
   );
