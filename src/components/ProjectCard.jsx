@@ -1,11 +1,21 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 
-function ProjectCard({ title, src, overview }) {
+function ProjectCard({ title, href, subTitle, src }) {
   return (
-    <div>
-      <img src={src} alt='' />
-      <h2>{title}</h2>
-      <p>{overview}</p>
+    <div className='w-full tracking-wider h-full shadow-lg rounded-md'>
+      <Link to={`/${title.toLowerCase().replace(' ', '')}`}>
+        <img
+          src={src}
+          alt={title}
+          className='opacity-90 hover:opacity-50 w-full object-cover rounded-t-md'
+        />
+        <div className='flex text-base font-medium py-2 '>
+          <h2>
+            {title} - <span className='font-normal'>{subTitle}</span>
+          </h2>
+        </div>
+        <span className='text-gray-700'>View Project</span>
+      </Link>
     </div>
   );
 }

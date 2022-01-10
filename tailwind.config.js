@@ -17,6 +17,12 @@ module.exports = {
       },
       padding: {
         third: '23%',
+        two: '15%',
+        one: '40%',
+        extra: '50%',
+      },
+      height: {
+        almostFull: '80vh',
       },
     },
     fontFamily: {

@@ -9,6 +9,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Project from './pages/Project';
 import { AnimatePresence } from 'framer-motion';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path={'/:title'} element={<Project />} />
         </Routes>
       </AnimatePresence>
 
