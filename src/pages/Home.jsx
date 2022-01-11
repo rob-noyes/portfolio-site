@@ -30,11 +30,6 @@ function Home() {
           subTitle='Calculate your tip'
           src='/images/projects/tipjar/tipjarCard.png'
         />
-        <ProjectCard
-          title='Cast'
-          subTitle='Weather tracking'
-          src='/images/projects/cast/castCard.png'
-        />
       </div>
       <div className='flex flex-col items-start w-full px-4 justify-between sm:items-center sm:flex-row max-w-7xl m-auto pb-40 tracking-wide'>
         <div>

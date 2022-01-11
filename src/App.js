@@ -1,16 +1,11 @@
 import Home from './pages/Home';
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  useLocation,
-} from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import { AnimatePresence } from 'framer-motion';
-import Rewind from './pages/projectpages/Rewind';
+import Project from './pages/Project';
 
 function App() {
   const location = useLocation();
@@ -18,12 +13,12 @@ function App() {
   return (
     <div className='w-full font-aktiv bg-primary'>
       <Header />
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence exitBeforeEnter initial={false}>
         <Routes location={location} key={location.pathname}>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/myrewind' element={<Rewind />} />
+          <Route path='/:project' element={<Project />} />
         </Routes>
       </AnimatePresence>
 
