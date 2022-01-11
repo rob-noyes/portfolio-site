@@ -17,23 +17,23 @@ function Home() {
         <ProjectCard
           title='My Rewind'
           subTitle='Movie Search'
-          src='/images/projects/myRewind/myrewind.netlify.app_.png'
+          src='/images/projects/myRewind/MyRewindCardv2.png'
           href='https://myrewind.netlify.app/'
         />
         <ProjectCard
           title='Room'
           subTitle='eCommerce Site'
-          src='/images/projects/room/desktop1.png'
+          src='/images/projects/room/roomCard.png'
         />
         <ProjectCard
           title='Tip Jar'
           subTitle='Calculate your tip'
-          src='/images/projects/tipjar/desktop.png'
+          src='/images/projects/tipjar/tipjarCard.png'
         />
         <ProjectCard
           title='Cast'
           subTitle='Weather tracking'
-          src='/images/projects/cast/castDesktop.png'
+          src='/images/projects/cast/castCard.png'
         />
       </div>
       <div className='flex flex-col items-start w-full px-4 justify-between sm:items-center sm:flex-row max-w-7xl m-auto pb-40 tracking-wide'>
