@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-function ProjectCard({ title, href, subTitle, src }) {
+function ProjectCard({ title, subTitle, src }) {
   return (
     <div className='w-full tracking-wider h-full '>
       <Link to={`/${title.toLowerCase().replace(' ', '')}`}>
