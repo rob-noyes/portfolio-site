@@ -17,11 +17,19 @@ function About() {
           <h2 className='text-2xl md:text-3xl font-medium pb-5 w-72'>
             Background
           </h2>
-          <p className='max-w-lg md:max-w-xl lg:max-w-2xl md:px-14 text-lg leading-relaxed tracking-wide'>
-            I'm an independent front-end developer currently living and working
-            in Portland, Oregon. Previously I worked as a Technology Evangelist
-            at Apple from June 2021 - November 2021.
-          </p>
+          <div>
+            <p className='max-w-lg md:max-w-xl lg:max-w-2xl md:px-14 text-lg leading-relaxed tracking-wide pb-8'>
+              I'm an independent front-end developer currently living and
+              working in Portland, Oregon. Previously I worked as a Technology
+              Evangelist at Apple from June 2021 - November 2021.
+            </p>
+            <a
+              className='md:px-14 pt-14 hover:underline text-gray-500'
+              href='https://www.linkedin.com/in/rnoyes/'
+            >
+              View my full resume
+            </a>
+          </div>
         </div>
         <div className='flex justify-between flex-col md:flex-row px-5 pb-40'>
           <h2 className='text-2xl md:text-3xl font-medium pb-5 w-72'>
