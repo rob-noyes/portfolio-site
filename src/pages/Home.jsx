@@ -1,5 +1,6 @@
 import ProjectCard from '../components/ProjectCard';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -39,9 +40,11 @@ function Home() {
           </p>
         </div>
         <div className='pt-10 sm:pt-0 '>
-          <button className='border-secondary rounded-lg border-2 py-3 px-6 text-lg font-semibold hover:text-primary hover:bg-secondary tracking-wide'>
-            GET IN TOUCH
-          </button>
+          <Link to='/contact'>
+            <button className='border-secondary rounded-lg border-2 py-3 px-6 text-lg font-semibold hover:text-primary hover:bg-secondary tracking-wide'>
+              GET IN TOUCH
+            </button>
+          </Link>
         </div>
       </div>
     </motion.div>
