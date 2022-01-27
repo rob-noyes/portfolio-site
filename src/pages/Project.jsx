@@ -60,7 +60,19 @@ function Project() {
                 <span className='text-sm'>{details.imgDescSmall2}</span>
               </div>
             </div>
-            <div className='py-20 max-w-2xl text-lg'>
+            <div className='pt-10 pb-20 max-w-2xl w-full text-lg'>
+              <h2 className='text-3xl font-medium py-4 tracking-wide'>Demo</h2>
+              <a className='text-blue-500 ' href={details.demo}>
+                {details.demo}
+              </a>
+              <h2 className='text-2xl font-medium py-4 tracking-wide'>
+                Github Repo:
+              </h2>
+              <a href={details.githubhref} className='text-blue-500'>
+                {details.githubhref}
+              </a>
+            </div>
+            <div className='pb-20 max-w-2xl text-lg'>
               <h2 className='text-3xl font-medium py-4 tracking-wide'>
                 Learning
               </h2>
@@ -91,18 +103,6 @@ function Project() {
               </ul>
             </div>
             <div className='mt-10 w-full border-t max-w-2xl border-secondary'></div>
-            <div className='py-10 pb-20 max-w-2xl w-full text-lg'>
-              <h2 className='text-3xl font-medium py-4 tracking-wide'>Demo</h2>
-              <a className='text-blue-500 ' href={details.demo}>
-                {details.demo}
-              </a>
-              <h2 className='text-2xl font-medium py-4 tracking-wide'>
-                Github Repo:
-              </h2>
-              <a href={details.githubhref} className='text-blue-500'>
-                {details.githubhref}
-              </a>
-            </div>
           </motion.div>
         ))}
       </AnimatePresence>
